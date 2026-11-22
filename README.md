@@ -4,7 +4,6 @@
 [![Tests Passing](https://img.shields.io/badge/tests-86%20passed-brightgreen.svg)](tests/)
 [![Coverage](https://img.shields.io/badge/coverage-88.5%25%20runtime-success.svg)](docs/COVERAGE_REPORT.txt)
 [![Audit](https://img.shields.io/badge/integrity%20audit-11%2F11%20PASS-brightgreen.svg)](docs/CODE_INTEGRITY_AUDIT.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![SBP Regulatory Sandbox](https://img.shields.io/badge/SBP%20Sandbox-Cohort%202%20(Theme%201)-darkgreen.svg)](SBP_APPLICATION/)
 
 > **Real-Time, Explainable AI Anomaly Detection & Zero-Trust Reverse-Proxy Mesh for Pakistan Open Banking & EMI APIs**
@@ -232,17 +231,3 @@ In accordance with State Bank of Pakistan sandbox principles, all technical boun
 
 ---
 
-## 12. License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-The APISentry dataset is redistributed under its original open research attribution from Zenodo (Record #22658802).
-
----
-
-## 13. Maintainer & Contact
-
-- **Applicant / Lead Engineer**: [YOUR_NAME] ([YOUR_EMAIL])
-- **Proposed Entity**: [YOUR_NAME] AI Labs (Pvt.) Limited (Pre-incorporation, Path A)
-- **Repository**: `https://github.com/ba456jutt-cloud/zero_trust_api_mesh`
-- **Application Dossier**: See [SBP_APPLICATION/01_applicant_details.md](SBP_APPLICATION/01_applicant_details.md)
