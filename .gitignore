@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ML artifacts (recreated by training)
+ml/artifacts/*.joblib
+ml/artifacts/*.pt
+ml/artifacts/old/
+!ml/artifacts/.gitkeep
+
+# Runtime logs
+logs/*.jsonl
+logs/*.db
+logs/*.log
+
+# External datasets — allow APISentry processed CSV
+data/external/apisentry/*.zip
+data/external/apisentry/*.tar.gz
+!data/external/apisentry/dataset_processed.csv
+!data/external/apisentry/encoders.json
+!data/external/apisentry/feature_columns.json
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Coverage
+coverage.xml
+docs/coverage_html/
+
+# Temporary
+/tmp/
+*.tmp

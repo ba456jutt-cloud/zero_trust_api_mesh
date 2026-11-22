@@ -1,0 +1,15 @@
+{
+  "source": "synthetic",
+  "model_artifact": "isolation_forest.joblib",
+  "n_normal_samples": 1200,
+  "calibrated_normal_stats": {
+    "mean": 0.49250605750626847,
+    "std": 0.2953569265059861,
+    "p50": 0.49549549549549554,
+    "p95": 0.9524524524524525,
+    "p99": 0.9899985457320823
+  },
+  "approve_threshold_p95": 0.9524524524524525,
+  "old_hack": "0.38 - (raw * 1.2)",
+  "new_method": "PercentileCalibrator (QuantileTransformer uniform)"
+}

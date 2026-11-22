@@ -1,0 +1,70 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.17, pytest-9.2.0, pluggy-1.7.0
+rootdir: /home/ahmad/Desktop/SBP_PROJECT
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, asyncio-1.5.0, cov-7.1.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 86 items
+
+tests/test_adapter.py ....                                               [  4%]
+tests/test_attacks.py ......                                             [ 11%]
+tests/test_backend.py ....                                               [ 16%]
+tests/test_concurrent_http.py ..                                         [ 18%]
+tests/test_dashboard.py ...                                              [ 22%]
+tests/test_features.py ......                                            [ 29%]
+tests/test_if_external.py ......                                         [ 36%]
+tests/test_interceptor.py .....                                          [ 41%]
+tests/test_ml.py ...........                                             [ 54%]
+tests/test_normal_traffic.py ...                                         [ 58%]
+tests/test_pipeline.py .....                                             [ 63%]
+tests/test_rf_external.py .....                                          [ 69%]
+tests/test_routers.py ....                                               [ 74%]
+tests/test_seed_patterns.py .....                                        [ 80%]
+tests/test_shap.py .....                                                 [ 86%]
+tests/test_simulator.py ....                                             [ 90%]
+tests/test_sliding_window.py ........                                    [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.11.17-final-0 _______________
+
+Name                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------
+backend/__init__.py                     0      0   100%
+backend/config.py                      32      0   100%
+backend/main.py                        42      9    79%   44-56, 98
+backend/middleware/__init__.py          0      0   100%
+backend/middleware/interceptor.py      88      6    93%   65, 91-92, 151, 180-181
+backend/models.py                      80      0   100%
+backend/routers/__init__.py             0      0   100%
+backend/routers/accounts.py            20      0   100%
+backend/routers/consent.py             27      2    93%   68-69
+backend/routers/transactions.py        16      2    88%   64-65
+backend/routers/transfer.py            16      1    94%   26
+data/__init__.py                        0      0   100%
+data/attack_traffic.py                 60      0   100%
+data/external/__init__.py               0      0   100%
+data/external/adapter.py              128     22    83%   168, 179, 182, 203, 205, 212, 214, 228, 237, 246, 250, 257, 266, 275, 279, 288, 292, 298, 303, 309, 319, 337
+data/normal_traffic.py                 82     16    80%   54, 57, 60, 63, 80-120, 273
+ml/__init__.py                          0      0   100%
+ml/calibration.py                      37      7    81%   41, 69, 88, 98-101
+ml/config.py                           21      0   100%
+ml/ensemble.py                         46     10    78%   35-40, 71-74
+ml/feature_engineering.py             128     18    86%   53, 56, 68-70, 77, 145, 166-167, 170, 172, 176, 187-190, 198-199
+ml/pipeline.py                         73      5    93%   53-56, 104
+ml/shap_explainer.py                   78     16    79%   25, 29-31, 48, 55, 64-66, 92-94, 143, 146-148
+ml/sliding_window.py                  106      8    92%   106, 114, 133-135, 177-178, 192
+ml/train_all.py                        46     15    67%   56, 65-114, 118
+ml/train_if_external.py               109    109     0%   10-196
+ml/train_isolation_forest.py           59      4    93%   120-122, 126
+ml/train_lstm.py                      125     10    92%   79-82, 88-90, 209-211, 215
+ml/train_rf.py                         66      8    88%   44-47, 150-152, 156
+ml/train_rf_external.py               124    124     0%   12-272
+tools/__init__.py                       0      0   100%
+tools/attack_simulator.py             154     19    88%   129-130, 147-148, 177-186, 198, 214, 284-289, 293
+tools/seed_patterns.py                109     18    83%   165-166, 237-239, 301-312, 316
+-----------------------------------------------------------------
+TOTAL                                1872    429    77%
+Coverage HTML written to dir docs/coverage_html
+Coverage XML written to file docs/coverage.xml
+======================== 86 passed in 75.01s (0:01:15) =========================

@@ -1,0 +1,32 @@
+{
+  "dataset": "APISentry (Zenodo 22658802)",
+  "contamination": 0.01,
+  "n_estimators": 200,
+  "n_train_normal": 4628,
+  "approve_threshold_p95": 0.950095,
+  "training_normal_calibrated": {
+    "mean": 0.499591,
+    "std": 0.289291,
+    "p50": 0.471471,
+    "p95": 0.950095,
+    "p99": 0.990038
+  },
+  "test_binary": {
+    "precision": 0.769841,
+    "recall": 0.275177,
+    "f1": 0.405434,
+    "roc_auc": 0.84193
+  },
+  "test_per_attack_mean_score": {
+    "api_flooding": 0.857135,
+    "bola": 0.900291,
+    "brute_force": 0.886795,
+    "credential_stuffing": 0.461851,
+    "normal": 0.524805,
+    "parameter_tampering": 0.989854,
+    "sql_injection": 0.976065,
+    "token_replay": 0.815405
+  },
+  "calibration_method": "PercentileCalibrator (QuantileTransformer uniform, fit on train normal raw IF scores)",
+  "trained_at": "2026-11-22T08:50:21.038728+00:00"
+}
